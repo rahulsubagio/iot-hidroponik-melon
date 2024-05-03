@@ -27,14 +27,15 @@ main {
 }
 
 .card {
-  @apply w-64 h-auto px-4 py-6 grid grid-cols-1 place-items-center bg-white shadow-lg rounded-xl;
+  @apply w-80 h-auto px-4 py-6 grid grid-cols-1 place-items-center;
+  @apply bg-white shadow-lg rounded-xl;
 }
 
 .iot-logo {
-  @apply w-40;
+  @apply w-40 h-auto;
 }
 
-button {
-  @apply rounded-full w-40 py-2 bg-blue-500 text-white text-xl font-semibold;
-  @apply hover:bg-slate-500;
+.button {
+  @apply rounded-lg w-64 py-2 text-center text-xl font-semibold;
+  @apply bg-blue-500 text-white hover:bg-blue-600;
 }
