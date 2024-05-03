@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-base;
+  }
+}
+
+:root {
+  font-family: "Titillium Web", sans-serif;
+  @apply bg-slate-200;
+}
+
+main {
+  @apply container grid h-screen place-content-center;
+}
+
+.card {
+  @apply w-64 h-auto px-4 py-6 grid grid-cols-1 place-items-center bg-white shadow-lg rounded-xl;
+}
+
+.iot-logo {
+  @apply w-40;
+}
+
+button {
+  @apply rounded-full w-40 py-2 bg-blue-500 text-white text-xl font-semibold;
+  @apply hover:bg-slate-500;
+}
