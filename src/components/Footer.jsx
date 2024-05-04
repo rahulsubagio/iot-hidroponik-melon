@@ -1,8 +1,9 @@
 const Footer = () => {
   return (
-    <div>
-      Komponen Footer
-    </div>
+    <footer>
+      <p><b>Copyright ©️ 2024,</b> IoT Hidroponik Melon 🍈</p>
+      <p>😎 by rahulsubagio</p>
+    </footer>
   )
 }
 

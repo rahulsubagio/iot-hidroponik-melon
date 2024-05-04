@@ -1,8 +1,8 @@
 const Logo = () => {
   return (
-    <div>
-      Komponen Logo
-    </div>
+    <>
+      <img src="/iot-logo.png" alt="iot logo" className="iot-logo"/>
+    </>
   )
 }
 

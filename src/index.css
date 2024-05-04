@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-base;
+  }
+  p {
+    @apply text-sm;
+  }
+}
+
+:root {
+  font-family: "Rubik", sans-serif;
+  @apply bg-slate-200;
+}
+
+.body {
+  @apply flex flex-col h-screen;
+}
+
+main {
+  @apply mb-auto mt-auto grid place-content-center;
+}
+
+.card {
+  @apply w-80 h-auto px-5 py-6 grid place-items-center;
+  @apply bg-white shadow-lg rounded-xl;
+}
+
+.iot-logo {
+  @apply w-40 h-auto;
+}
+
+.judul {
+  @apply text-center font-semibold my-5;
+}
+
+.button {
+  @apply rounded-lg w-64 py-2 text-center text-xl font-semibold;
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+footer {
+  @apply text-center mb-5 static bottom-0;
+}
