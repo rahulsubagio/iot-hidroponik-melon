@@ -44,7 +44,7 @@ main {
 
 .form-input {
   @apply block w-full px-3 py-2 shadow-md text-base text-hijo-dark;
-  @apply bg-slate-200 rounded-lg border border-slate-300 placeholder-slate-400;
+  @apply bg-slate-100 rounded-lg border border-slate-300 placeholder-slate-400;
   @apply focus:outline-none focus:border-hijo-dark focus:ring-1 focus:ring-hijo-dark;
 }
 
