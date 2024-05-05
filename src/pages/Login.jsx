@@ -15,7 +15,7 @@ const Login = () => {
             <label className="block mt-2">
               <input type="password" name="password" id="password" placeholder="Password" className="form-input"/>
             </label>
-            <button type="submit" className="button-login mt-10">
+            <button type="submit" className="mt-10 button-login">
               <h4>Login</h4>
             </button>
           </form>
