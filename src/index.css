@@ -42,15 +42,22 @@ main {
   @apply w-40 h-auto;
 }
 
-.judul {
-  @apply text-center font-semibold my-5;
+.form-input {
+  @apply block w-full px-3 py-2 shadow-md text-base text-hijo-dark;
+  @apply bg-slate-200 rounded-lg border border-slate-300 placeholder-slate-400;
+  @apply focus:outline-none focus:border-hijo-dark focus:ring-1 focus:ring-hijo-dark;
 }
 
-.button {
-  @apply rounded-lg w-64 py-2 text-center text-xl font-semibold;
+.button-login {
+  @apply rounded-lg w-64 py-2 text-center font-semibold shadow-md;
   @apply bg-blue-500 text-white hover:bg-blue-600;
 }
 
+.button-back {
+  @apply rounded-lg w-64 py-2 mt-2 text-center font-semibold shadow-md;
+  @apply bg-red-500 text-white hover:bg-red-600;
+}
+
 footer {
-  @apply text-center mb-5 static bottom-0;
+  @apply text-center mb-5 static bottom-0 text-hijo-dark;
 }
