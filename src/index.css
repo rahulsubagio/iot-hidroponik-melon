@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    font-family: "Rubik", sans-serif;
+    @apply bg-slate-200;
+  }
   h1 {
     @apply text-3xl;
   }
@@ -18,46 +22,46 @@
   p {
     @apply text-sm;
   }
+  
 }
 
-:root {
-  font-family: "Rubik", sans-serif;
-  @apply bg-slate-200;
+@layer components {
+  .container {
+    @apply mx-auto flex flex-col h-screen;
+  }
+
+  .card {
+    @apply w-80 h-auto px-5 py-6 grid place-items-center;
+    @apply bg-white shadow-lg rounded-xl;
+  }
+  
+  main {
+    @apply mb-auto mt-auto grid place-content-center;
+  }
+  
+  footer {
+    @apply text-center mb-5 static bottom-0 text-hijo-dark;
+  }
 }
 
-.body {
-  @apply flex flex-col h-screen;
-}
-
-main {
-  @apply mb-auto mt-auto grid place-content-center;
-}
-
-.card {
-  @apply w-80 h-auto px-5 py-6 grid place-items-center;
-  @apply bg-white shadow-lg rounded-xl;
-}
-
-.iot-logo {
-  @apply w-40 h-auto;
-}
-
-.form-input {
-  @apply block w-full px-3 py-2 shadow-md text-base text-hijo-dark;
-  @apply bg-slate-100 rounded-lg border border-slate-300 placeholder-slate-400;
-  @apply focus:outline-none focus:border-hijo-dark focus:ring-1 focus:ring-hijo-dark;
-}
-
-.button-login {
-  @apply rounded-lg w-64 py-2 text-center font-semibold shadow-md;
-  @apply bg-blue-500 text-white hover:bg-blue-600;
-}
-
-.button-back {
-  @apply rounded-lg w-64 py-2 mt-2 text-center font-semibold shadow-md;
-  @apply bg-red-500 text-white hover:bg-red-600;
-}
-
-footer {
-  @apply text-center mb-5 static bottom-0 text-hijo-dark;
+@layer utilities {
+  .iot-logo {
+    @apply w-40 h-auto;
+  }
+  
+  .form-input {
+    @apply block w-full px-3 py-2 shadow-md text-base text-hijo-dark;
+    @apply bg-slate-100 rounded-lg border border-slate-300 placeholder-slate-400;
+    @apply focus:outline-none focus:border-hijo-dark focus:ring-1 focus:ring-hijo-dark;
+  }
+  
+  .button-login {
+    @apply rounded-lg w-64 py-2 text-center font-semibold shadow-md;
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+  }
+  
+  .button-back {
+    @apply rounded-lg w-64 py-2 mt-2 text-center font-semibold shadow-md;
+    @apply bg-red-500 text-white hover:bg-red-600;
+  }
 }
