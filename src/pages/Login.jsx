@@ -21,7 +21,6 @@ const Login = () => {
       navigate("/dashboard")
     } catch (error) {
       console.error(error)
-      navigate("/")
     }
   }
   
