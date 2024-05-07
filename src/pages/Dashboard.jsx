@@ -22,9 +22,9 @@ const Dashboard = () => {
       <main>  
         <h1>Ini halaman dashboard</h1>
         <h2>{user && user.email}</h2>
-        <a onClick={handleLogout} className="button-back">
+        <button onClick={handleLogout} className="button-back">
           <h4>Logout</h4>
-        </a>
+        </button>
       </main>
     </div>
   )
