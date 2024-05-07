@@ -1,6 +1,7 @@
 import { signOut } from "firebase/auth"
 import { useNavigate } from "react-router-dom"
 import { auth } from "../firebase"
+import Sidebar from "../components/Sidebar"
 
 const Dashboard = () => {
   const user = JSON.parse(localStorage.getItem('user'))
@@ -19,6 +20,7 @@ const Dashboard = () => {
 
   return (
     <div className="container">
+      <Sidebar/>
       <main>  
         <h1>Ini halaman dashboard</h1>
         <h2>{user && user.email}</h2>
