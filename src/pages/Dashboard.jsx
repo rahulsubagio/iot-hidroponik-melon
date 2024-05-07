@@ -19,16 +19,18 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="container">
+    <>
       <Sidebar/>
-      <main>  
-        <h1>Ini halaman dashboard</h1>
-        <h2>{user && user.email}</h2>
-        <button onClick={handleLogout} className="button-back">
-          <h4>Logout</h4>
-        </button>
-      </main>
-    </div>
+      <div className="container">
+        <main className="mt-0">  
+          <h1>Ini halaman dashboard</h1>
+          <h2>{user && user.email}</h2>
+          <button onClick={handleLogout} className="button-back">
+            <h4>Logout</h4>
+          </button>
+        </main>
+      </div>
+    </>
   )
 }
 
