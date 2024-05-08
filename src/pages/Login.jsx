@@ -38,12 +38,12 @@ const Login = () => {
             <label className="block mt-2">
               <input type="password" placeholder="Password" className="form-input" value={password} onChange={(e) => setPassword(e.target.value)}/>
             </label>
-            <button type="submit" className="mt-10 button-login">
+            <button type="submit" className="mt-10 btn-login">
               <h4>Login</h4>
             </button>
           </form>
 
-            <a href="/" className="button-back">
+            <a href="/" className="btn-back">
               <h4>Kembali</h4>
             </a>
         </div>

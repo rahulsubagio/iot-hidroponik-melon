@@ -5,7 +5,7 @@
 @layer base {
   :root {
     font-family: "Poppins", sans-serif;
-    @apply bg-slate-200;
+    @apply bg-slate-100;
   }
   h1 {
     @apply text-3xl;
@@ -51,17 +51,38 @@
   
   .form-input {
     @apply block w-full px-3 py-2 shadow-md text-base text-hijo-dark;
-    @apply bg-slate-100 rounded-lg border border-slate-300 placeholder-slate-400;
+    @apply bg-slate-50 rounded-lg border border-slate-300 placeholder-slate-400;
     @apply focus:outline-none focus:border-hijo-dark focus:ring-1 focus:ring-hijo-dark;
+    @apply invalid:border-red-500 invalid:text-red-500 invalid:focus:ring-red-500;
   }
   
-  .button-login {
+  .btn-login {
     @apply rounded-lg w-64 py-2 text-center font-semibold shadow-md;
     @apply bg-blue-500 text-white hover:bg-blue-600;
   }
   
-  .button-back {
+  .btn-back {
     @apply rounded-lg w-64 py-2 mt-2 text-center font-semibold shadow-md;
     @apply bg-red-500 text-white hover:bg-red-600;
+  }
+
+  .btn-side {
+    @apply flex items-center p-1.5 rounded-md text-slate-600 bg-slate-200 hover:bg-slate-100;
+  }
+
+  .side-head {
+    @apply flex flex-col h-full bg-white border-r shadow-sm overflow-hidden transition-all;
+  }
+
+  .side-item {
+    @apply flex items-center w-full px-2 py-2 font-semibold rounded-md hover:bg-slate-200 text-slate-600;
+  }
+
+  .side-close {
+    @apply overflow-hidden transition-all;
+  }
+
+  .active {
+    @apply bg-kuning;
   }
 }
