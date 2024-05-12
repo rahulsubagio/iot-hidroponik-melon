@@ -28,29 +28,24 @@ const Sidebar = () => {
       page: "/dashboard",
     },
     {
-      name: "Statistik",
-      icon: <Icon icon="material-symbols:bar-chart-4-bars-rounded" />,
-      page: "/waterlevel",
+      name: "Target",
+      icon: <Icon icon="material-symbols:target" />,
+      page: "/target",
     },
     {
-      name: "Sensor",
-      icon: <Icon icon="material-symbols:dashboard-outline-rounded" />,
-      page: "/waterlevel",
+      name: "Inventory",
+      icon: <Icon icon="material-symbols:inventory-2-outline-rounded" />,
+      page: "/inventory",
     },
     {
-      name: "WaterLevel",
-      icon: <Icon icon="material-symbols:bar-chart-4-bars-rounded" />,
-      page: "/waterlevel",
+      name: "History",
+      icon: <Icon icon="material-symbols:history-rounded" />,
+      page: "/history",
     },
     {
-      name: "Log",
-      icon: <Icon icon="material-symbols:dashboard-outline-rounded" />,
-      page: "/waterlevel",
-    },
-    {
-      name: "Status",
-      icon: <Icon icon="material-symbols:bar-chart-4-bars-rounded" />,
-      page: "/waterlevel",
+      name: "Setting",
+      icon: <Icon icon="material-symbols:settings-rounded" />,
+      page: "/setting",
     },
   ] 
   

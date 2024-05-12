@@ -4,7 +4,7 @@ const Dashboard = () => {
   return (
     <>
       <Sidebar/>
-      <div className="ml-14 bg-slate-500">
+      <div className="h-screen text-center ml-14 bg-slate-500">
         <h1>Ini halaman dashboard</h1>
       </div>
     </>
