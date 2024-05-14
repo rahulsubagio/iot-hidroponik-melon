@@ -71,7 +71,7 @@
   }
 
   .side-head {
-    @apply flex flex-col h-full bg-white border-r shadow-sm overflow-hidden transition-all;
+    @apply flex flex-col h-full bg-white border-r shadow-sm overflow-hidden transition-all ease-in-out;
   }
 
   .side-item {
@@ -83,6 +83,6 @@
   }
 
   .active {
-    @apply bg-kuning;
+    @apply bg-kuning transition-all ease-in-out;
   }
 }
