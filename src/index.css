@@ -42,6 +42,10 @@
   footer {
     @apply text-center mb-5 static bottom-0 text-hijo-dark;
   }
+
+  header {
+    @apply fixed flex items-center w-full p-2 bg-white border-b shadow-sm ml-14 h-14;
+  }
 }
 
 @layer utilities {
