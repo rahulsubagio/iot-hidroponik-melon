@@ -24,7 +24,7 @@ const optionsTDS = {
   responsive: true,
   plugins: {
     title: {
-      display: true,
+      display: false,
       text: 'Grafik TDS (ppm)'
     },
   },
@@ -34,7 +34,7 @@ const optionsPH = {
   responsive: true,
   plugins: {
     title: {
-      display: true,
+      display: false,
       text: 'Grafik pH'
     },
   },
@@ -46,7 +46,7 @@ const dataTDS = {
   labels,
   datasets: [
     {
-      label: 'TDS',
+      label: 'TDS (ppm)',
       data: labels.map(() => faker.datatype.number({min: 100, max: 2000})),
       borderColor: 'rgb(255, 99, 132)',
       backgroundColor: 'rgba(255, 99, 132, 0.5)',  
@@ -92,7 +92,7 @@ const dataSensor = [
     nilai: 25,
   },
   {
-    sensor: "Kelembapan",
+    sensor: "Humidity",
     name: "RH %",
     nilai: 88,
   },
