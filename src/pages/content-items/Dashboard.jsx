@@ -75,24 +75,57 @@ function getDate() {
   return `${date}/${month}/${year}`
 }
 
-const dataSensor = {
-  
-}
+const dataSensor = [
+  {
+    sensor: "TDS",
+    name: "PPM",
+    nilai: 398, 
+  },
+  {
+    sensor: "pH",
+    name: "pH",
+    nilai: 8.4,
+  },
+  {
+    sensor: "Suhu Air",
+    name: "°C",
+    nilai: 25,
+  },
+  {
+    sensor: "Kelembapan",
+    name: "RH %",
+    nilai: 88,
+  },
+  {
+    sensor: "Suhu",
+    name: "°C",
+    nilai: 25,
+  }
+]
 
 const Dashboard = () => {
-  const [currenDate, setCurrentDate] = useState(getDate())
+  const [currenDate] = useState(getDate())
   
   return (
     <>
-      <div className="flex justify-between w-full h-auto px-4 py-2 font-semibold card text-slate-600">
+      <div className="flex justify-between w-full h-auto px-4 py-2 font-semibold text-slate-600 card-item">
         <p>Tanggal : {currenDate}</p>
         <p>Hari ke : 15</p>
       </div>
-      <div className="w-full h-auto p-2 mt-2 card">
+      <div className="w-full h-auto p-2 mt-2 card-item">
         <Line options={optionsTDS} data={dataTDS}/>
       </div>
-      <div className="w-full h-auto p-2 mt-2 card">
+      <div className="w-full h-auto p-2 mt-2 card-item">
         <Line options={optionsPH} data={dataPH}/>
+      </div>
+      <div className="grid h-full grid-cols-3 gap-2 mt-2">
+        {dataSensor.map((sensor) => (
+          <div className="card-box" key={dataSensor.sensor}>
+            <h2 className="text-hijo-light">{sensor.nilai}</h2>
+            <p className="text-xs">{sensor.name}</p>
+            <p className="text-xs font-semibold ">{sensor.sensor}</p>
+          </div>
+        ))}
       </div>
     </>
   )
