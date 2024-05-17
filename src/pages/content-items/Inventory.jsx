@@ -24,7 +24,7 @@ const waterLevel = [
 const Inventory = () => {
   return (
     <>
-      <div className="grid h-full grid-cols-2 gap-2 mt-2">
+      <div className="grid h-full grid-cols-2 gap-2">
         {waterLevel.map((sensor) => (
           <div className="card-box" key={waterLevel.sensor}>
             <h2 className="text-hijo-light">{sensor.nilai}</h2>

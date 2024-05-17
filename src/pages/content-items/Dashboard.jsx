@@ -112,10 +112,10 @@ const Dashboard = () => {
         <p>Tanggal : {currenDate}</p>
         <p>Hari ke : 15</p>
       </div>
-      <div className="w-full h-auto p-2 mt-2 card-item">
+      <div className="card-charts">
         <Line options={optionsTDS} data={dataTDS}/>
       </div>
-      <div className="w-full h-auto p-2 mt-2 card-item">
+      <div className="card-charts">
         <Line options={optionsPH} data={dataPH}/>
       </div>
       <div className="grid h-full grid-cols-3 gap-2 mt-2">

@@ -35,6 +35,10 @@
     @apply bg-white shadow-lg rounded-xl;
   }
 
+  .card-charts {
+    @apply grid w-full h-auto p-2 mt-2 card-item place-items-center;
+  }
+
   .card-item {
     @apply bg-white shadow-lg rounded-xl;
   }
