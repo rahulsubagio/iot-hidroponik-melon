@@ -8,16 +8,16 @@ const waterLevel = [
     nilai: 80,
   },
   {
-    sensor: "Air",
-    nilai: 80,
+    sensor: "AB Mix",
+    nilai: 60,
   },
   {
     sensor: "pH Up",
-    nilai: 80,
+    nilai: 30,
   },
   {
     sensor: "pH Down",
-    nilai: 80,
+    nilai: 40,
   },
 ]
 
